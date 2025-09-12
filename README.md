@@ -54,7 +54,4 @@ This repository contains a Python project for automated data quality assessment 
 You can easily add new validation or correction rules by editing the respective modules in `src/` and adding tests in `tests/`.
 
 ## Author
-Nikola Penkev
-
----
-For any questions or improvements, feel free to open an issue or contact the author.
+Nikolai Penkev
