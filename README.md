@@ -47,7 +47,7 @@ This repository contains a Python project for automated data quality assessment 
    pytest tests
    ```
 
-   The path to your dataset is managed centrally in `src/config.py` (see `DATASET_PATH`). Update this file if you want to use a different dataset or location.
+   The path to your dataset is managed centrally in `src/config.py` (see `DATASET_PATH`). Update this file wif you want to use a different dataset or location.
    Make sure you have added your CSV file (e.g., `test_dataset.csv`) to the project root, or update `src/config.py` to point to your data file. The tests and scripts require this file to validate and sort the data.
 
 
