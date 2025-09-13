@@ -1,7 +1,17 @@
+
+# validate_dataset.py
+# Requirements: pandas must be installed, and test_dataset.csv must exist in the project root.
+# This script loads the dataset, runs validation checks, and outputs a data quality report.
+
+
+# validate_dataset.py
+# Requirements: pandas must be installed, and test_dataset.csv must exist in the project root.
+# This script loads the dataset, runs validation checks, and outputs a data quality report.
+
 from src.data_validation import load_dataset, validate_dataset
+from src.config import DATASET_PATH
 
 def main():
-    DATASET_PATH = 'test_dataset.csv'
     df = load_dataset(DATASET_PATH)
     report, issues = validate_dataset(df)
 

@@ -46,7 +46,9 @@ This repository contains a Python project for automated data quality assessment 
    ```powershell
    pytest tests
    ```
-   Make sure you have added your CSV file (e.g., `test_dataset.csv`) to the project root. The tests and scripts require this file to validate and sort the data.
+
+   The path to your dataset is managed centrally in `src/config.py` (see `DATASET_PATH`). Update this file if you want to use a different dataset or location.
+   Make sure you have added your CSV file (e.g., `test_dataset.csv`) to the project root, or update `src/config.py` to point to your data file. The tests and scripts require this file to validate and sort the data.
 
 
 ## Reporting
@@ -61,8 +63,9 @@ To generate a visual HTML report of data quality issues:
 
 This report can be published to GitHub Pages using the provided workflow.
 
+
 ## Adding Your Data
-To use the validation and correction tools, place your CSV file (named `test_dataset.csv`) in the project root directory. The scripts and tests will automatically use this file for analysis and reporting.
+To use the validation and correction tools, place your CSV file (named `test_dataset.csv`) in the project root directory, or update the path in `src/config.py` to match your data file. The scripts and tests will automatically use this file for analysis and reporting.
 
 ## How it works
 - Validation logic is in `src/data_validation.py`.
