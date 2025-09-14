@@ -1,5 +1,4 @@
-from src.data_validation import load_dataset, validate_dataset
-from src.data_correction import correct_dataset
+from data_validation import load_dataset, validate_dataset
 
 HTML_TEMPLATE = """
 <!DOCTYPE html>
@@ -31,7 +30,7 @@ HTML_TEMPLATE = """
 
 def generate_html_report(dataset_path, output_path="report.html", sample_size=10):
     df = load_dataset(dataset_path)
-    report, issues = validate_dataset(df)
+    report, issues, _ = validate_dataset(df)
     summary = "".join([f"<li>{item}</li>" for item in report])
     tables = ""
     for key, issue_df in issues.items():
