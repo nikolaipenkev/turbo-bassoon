@@ -90,7 +90,7 @@ if __name__ == "__main__":
             f.write(line + "\n")
     # Generate HTML report with ID in filename and header
     import reporting
-    reporting.generate_html_report("test_dataset.csv", f"report_{report_id}.html", report_id=report_id)
+    reporting.generate_html_report("test_dataset.csv", f"report_{report_id}.html")
     print("\nSuggested Solutions:")
     for s in suggestions:
         print(s)

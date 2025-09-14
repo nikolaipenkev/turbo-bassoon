@@ -1,0 +1,22 @@
+
+
+# Ignore all CSV files
+*.csv
+test_dataset_clean_*.csv
+
+# Ignore all HTML reports
+report*.html
+
+# Ignore all data quality text reports
+data_quality_report*.txt
+
+# Ignore Python virtual environment
+.venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore GitHub config and workflows
+.github/
+.github/workflows/
