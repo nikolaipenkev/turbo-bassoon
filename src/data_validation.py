@@ -1,6 +1,8 @@
+
 import pandas as pd
 import re
 from datetime import datetime
+from src.config import DATASET_PATH
 
 def load_dataset(path):
     return pd.read_csv(path)
@@ -75,7 +77,7 @@ def validate_dataset(df):
     return report, issues, suggestions
 
 if __name__ == "__main__":
-    df = load_dataset("test_dataset.csv")
+    df = load_dataset(DATASET_PATH)
     report, issues, suggestions = validate_dataset(df)
     print("Data Validation Report:")
     for line in report:
@@ -90,7 +92,7 @@ if __name__ == "__main__":
             f.write(line + "\n")
     # Generate HTML report with ID in filename and header
     import reporting
-    reporting.generate_html_report("test_dataset.csv", f"report_{report_id}.html")
+    reporting.generate_html_report(DATASET_PATH, f"report_{report_id}.html")
     print("\nSuggested Solutions:")
     for s in suggestions:
         print(s)

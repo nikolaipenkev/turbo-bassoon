@@ -6,12 +6,6 @@
 
 This is a code challenge for QA Engineer in DATA at Betsson.
 
-**It is expected that all points are addressed.**
-
-This challenge covers:
-- Data Quality Assessment and Identification
-- Data Validation and Error Handling
-
 ## Tasks
 
 - **Identify and document the data quality issues present in the dataset, explaining the nature of each issue.**
@@ -24,10 +18,10 @@ This challenge covers:
 - `src/data_validation.py` — Main validation logic and entry point for validation/report generation.
 - `src/reporting.py` — HTML report generator.
 - `src/config.py` — Central config for dataset path.
-- `test_dataset.csv` — Provided test dataset.
-- `validate_dataset.py` — CLI script for validation and text report.
 - `requirements.txt` — Python dependencies (`pandas`, `pytest`).
 - `tests/test_data_validation.py` — Pytest-based unit tests for validation logic.
+
+> **Note:** The dataset is not included in this repository. Its path can be set in `src/config.py`.
 
 ---
 
